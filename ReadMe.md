@@ -1,7 +1,6 @@
 <h1>Leet Translator</h1>
-<hr>
 <p>
-Translates text to leet code, made famous be the internet in the late 90's/early 2000's. Rules are as follow.
+Translates text to leet code, made famous be the internet in the late 90's/early 2000's. Rules are as follows:
 </p>
 <table>
   <tr>
