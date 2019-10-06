@@ -1,0 +1,53 @@
+<h1>Leet Translator</h1>
+<hr>
+<p>
+Translates text to leet code, made famous be the internet in the late 90's/early 2000's. Rules are as follow.
+</p>
+<table>
+  <tr>
+    <th>Letter</th>
+    <th>Leet</th>
+  </tr>
+  <tr>
+    <td>A/a</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>C/c</td>
+    <td>(</td>
+  </tr>
+  <tr>
+    <td>E/e</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>F/f</td>
+    <td>ph</td>
+  </tr>
+  <tr>
+    <td>I/i</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>G/g</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>O/o</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>S/s</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>T/t</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>You</td>
+    <td>U</td>
+  </tr>
+</table>
+
+<h3>Uses GNU License</h3>
