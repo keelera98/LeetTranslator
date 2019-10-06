@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
-#include <string.h>
+include <string.h>
 
 int main(){
 	char read;
