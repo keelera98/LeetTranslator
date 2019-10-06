@@ -8,9 +8,11 @@ int main(int argc, char** argv){
 	FILE* fp;
 	char* str;
 	int pos = 0;
-
+	
+	//will be used to compare for the word you
 	str = malloc(sizeof(char) * 4);
 
+	//uses the command line arguments, input is first then output
 	if((fp = fopen(argv[1], "r")) && (out = fopen(argv[2], "w"))){
 		while((read = fgetc(fp)) != EOF){
 		
@@ -68,7 +70,10 @@ int main(int argc, char** argv){
 		}
 		fclose(fp);
 		fclose(out);
+	
+		printf("TRANSLATION COMPLETE\n");
+	}else{
+		perror("Error");
 	}
-	printf("TRANSLATION COMPLETE\n");
 	free(str);
 }
