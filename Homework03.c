@@ -7,6 +7,7 @@ int main(int argc, char** argv){
 	FILE* out;
 	FILE* fp;
 	char* str;
+	int pos = 0;
 
 	str = malloc(sizeof(char) * 4);
 
@@ -52,11 +53,13 @@ int main(int argc, char** argv){
 					break;
 				case 'Y':
 				case 'y':
+					pos = ftell(fp);
 					fgets(str, 3, fp);
 					if(!(strcmp(str, "ou")))
 						fputc('U', out);
 					else{
 						fputs("y0", out);
+						fseek(fp, pos + 1, SEEK_SET);
 					}
 					break;
 				default:
