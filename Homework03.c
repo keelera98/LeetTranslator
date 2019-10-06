@@ -55,12 +55,14 @@ int main(int argc, char** argv){
 					break;
 				case 'Y':
 				case 'y':
+					//saves the pointers position
 					pos = ftell(fp);
 					fgets(str, 3, fp);
 					if(!(strcmp(str, "ou")))
 						fputc('U', out);
 					else{
 						fputs("y0", out);
+						//returns pointer to previous position
 						fseek(fp, pos + 1, SEEK_SET);
 					}
 					break;
@@ -73,6 +75,7 @@ int main(int argc, char** argv){
 	
 		printf("TRANSLATION COMPLETE\n");
 	}else{
+		//prints error message
 		perror("Error");
 	}
 	free(str);
